@@ -24,14 +24,13 @@ theme:
 plugins:
   - search
   - blog:
-      blog_dir: articles
+      blog_dir: .
+      blog_toc: false
       post_url_format: "{slug}"
       post_excerpt: required
 
 nav:
   - Home: index.md
-  - Articles:
-      - articles/index.md
   - Navinvent ↗: https://navinvent.com/
 
 markdown_extensions:
