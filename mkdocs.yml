@@ -1,0 +1,56 @@
+site_name: Navinvent
+site_url: https://navinvent.github.io/
+site_author: Navin Kumar Balagopal
+site_description: Tools, methods, and write-ups. Science, art, and inbetween.
+
+theme:
+  name: material
+  logo: assets/logo_circle_white.png
+  favicon: assets/logo_circle_white.png
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    scheme: slate
+    primary: black
+    accent: light blue
+
+plugins:
+  - search
+  - blog:
+      blog_dir: articles
+      post_url_format: "{slug}"
+      post_excerpt: required
+
+nav:
+  - Home: index.md
+  - Articles:
+      - articles/index.md
+  - Navinvent ↗: https://navinvent.com/
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://navinvent.com/
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-3012-2469
+    - icon: fontawesome/brands/github
+      link: https://github.com/navinvent
